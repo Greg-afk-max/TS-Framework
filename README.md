@@ -17,3 +17,13 @@ Navigate to https://docs.katalon.com/katalon-studio/docs/shopping-cart-prj.html 
 
 ### Katalon Studio
 [Katalon Studio](https://www.katalon.com) is a free and complete automation testing solution for Web, Mobile, and API testing with modern methodologies (Data-Driven Testing, TDD/BDD, Page Object Model, etc.) as well as advanced integration (JIRA, qTest, Slack, CI, Katalon TestOps, etc.). Learn more about [Katalon Studio features](https://www.katalon.com/features/).
+
+
+In a complex Katalon framework, best practices include:
+
+Managing Global Variables and Profiles for environment-specific configurations.
+Using Custom Keywords for reusable browser actions.
+Leveraging Test Listeners for global setup and teardown.
+Employing modularized test steps to maintain scalability.
+Implementing error handling for robustness.
+This structure ensures that the framework is maintainable, scalable, and can handle dynamic testing needs.

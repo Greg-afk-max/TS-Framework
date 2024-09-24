@@ -1,14 +1,22 @@
-import com.katalon.KatalonHelper
-import com.kms.katalon.core.annotation.BeforeTestSuite
-import com.kms.katalon.core.context.TestSuiteContext
+import com.kms.katalon.core.annotation.BeforeTestCase
+import com.kms.katalon.core.annotation.AfterTestCase
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable
+import com.kms.katalon.core.configuration.RunConfiguration
 
 class TestListener {
-	/**
-	 * Executes before every test suite starts.
-	 * @param testSuiteContext: related information of the executed test suite.
-	 */
-	@BeforeTestSuite
-	def sampleBeforeTestSuite(TestSuiteContext testSuiteContext) {
-		KatalonHelper.updateInfo()
+
+
+	@BeforeTestCase
+	def beforeTestCase() {
+		def htmlDir = RunConfiguration.getProjectDir() + GlobalVariable.urlLogin
+		WebUI.openBrowser(htmlDir)
+		WebUI.maximizeWindow()
+	}
+
+	@AfterTestCase
+	def afterTestCase() {
+		WebUI.closeBrowser()
 	}
 }
+

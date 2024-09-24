@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblProduct</name>
+   <name>page_header</name>
    <tag></tag>
-   <elementGuidId>bc351547-109a-4690-bd7a-c39e5f322c58</elementGuidId>
+   <elementGuidId>73d72971-c99c-46d1-8834-841054bbcc68</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'Flying Ninja' or . = 'Flying Ninja')]</value>
+         <value>/html/body/div/h1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>Flying Ninja</value>
+      <value>/html/body/div/h1</value>
+      <webElementGuid>cd22ed53-34c8-4852-8456-83c8ed3155cc</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -15,7 +15,7 @@
       <guid>6b4b97a6-29c8-4b3f-ab03-19fb2018c5c7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Custom-keyword samples/Order and check out a single product</testCaseId>
+      <testCaseId>Test Cases/Custom-keyword samples/dropdown_select</testCaseId>
       <testDataLink>
          <combinationType>MANY</combinationType>
          <id>0cb7a72a-21f6-43a0-9509-6ba988da6ba9</id>

@@ -15,19 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-CustomKeywords.'sample.Login.loginIntoApplicationWithGlobalVariable'()
+WebUI.scrollToElement(findTestObject('web_components/dropdown'), 0)
 
-WebUI.waitForElementPresent(findTestObject('Pages/Shop page/lnkShop'), GlobalVariable.waitPresentTimeout)
-
-WebUI.click(findTestObject('Pages/Shop page/lnkShop'))
-
-CustomKeywords.'sample.Shop.addToCartWithGlobalVariable'()
-
-CustomKeywords.'sample.Checkout.CheckoutShop'(firstName, lastName, companyName, country, address, city, postCode, Phone)
-
-CustomKeywords.'sample.Login.logoutFromApplication'()
-
-WebUI.closeBrowser()
-
-WebUI.comment('')
+WebUI.delay(5)
 

@@ -1,4 +1,4 @@
-package sample
+package ts_keywords
 
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
