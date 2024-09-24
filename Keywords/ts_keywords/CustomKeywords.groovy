@@ -20,23 +20,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class CustomKeywords {
-	
-	
-	
-		@Keyword
-		def clickElement(String elementXpath) {
-			WebUI.click(findTestObject(elementXpath))
-		}
-	
-		@Keyword
-		def enterText(String elementXpath, String text) {
-			WebUI.setText(findTestObject(elementXpath), text)
-		}
-	
-		@Keyword
-		def static verifyElementVisible(String elementXpath) {
-			WebUI.verifyElementVisible(findTestObject(elementXpath))
-		}
+
+
+
+	@Keyword
+	def clickElement(String elementXpath) {
+		WebUI.click(findTestObject(elementXpath))
 	}
-	
+
+	@Keyword
+	def enterText(String elementXpath, String text) {
+		WebUI.setText(findTestObject(elementXpath), text)
+	}
+
+	@Keyword
+	def static verifyElementVisible(String elementXpath) {
+		WebUI.verifyElementVisible(findTestObject(elementXpath))
+	}
+}
+
 

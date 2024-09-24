@@ -1,24 +1,40 @@
-.gradle
-
-bin
-
-Reports
-
-Libs
-
-output
-
-!output/.gitkeep
-build
-
-.classpath
-
-.project
-
-.cache
+# Katalon Studio-specific files
 /bin/
 /Libs/
-/.settings/
 /.classpath
-.svn/
-.cache/
+.project
+.settings/
+
+# Reports and logs
+/Reports/
+/logs/
+/tmp/
+/.bin
+
+# OS generated files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Java/Gradle related
+.gradle
+/build/
+
+# Test artifacts
+*.csv
+*.xls
+*.xlsx
+*.html
+*.properties
+*.log
+*.png
+
+# Backup files
+*.bak
+*.swp
+*.tmp
+
+# Execution profiles (optional)
+*.profile
+*.local.properties
