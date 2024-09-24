@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "1CD6737FECECC00DE204C5D9E9B954DF",
+  "keywordFileContentHash": "1E33EFA8002B4FE6E2263D7060E45571",
   "keywordClasses": [
     {
       "name": "ts_keywords.CustomKeywords",
@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "enterText",
@@ -52,8 +51,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "verifyElementVisible",
@@ -71,11 +69,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
