@@ -1,9 +1,28 @@
 {
-  "keywordFileContentHash": "4C774A9F05B5C8F433CA9C387A92FEAE",
+  "keywordFileContentHash": "741752381627B5FC9EB7B1D953B43D8E",
   "keywordClasses": [
     {
       "name": "ts_keywords.CustomKeywords",
       "keywordMethods": [
+        {
+          "name": "mouseOverDatePicker",
+          "parameters": [
+            {
+              "name": "datePickerXPath",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
         {
           "name": "clickElement",
           "parameters": [
