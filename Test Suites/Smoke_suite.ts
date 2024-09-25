@@ -15,7 +15,7 @@
       <guid>0b265b7e-35b7-42fc-86b2-17261858d541</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Custom-keyword samples/dropdown_select</testCaseId>
+      <testCaseId>Test Cases/Custom_keyword_testcases/dropdown_select</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -70,7 +70,7 @@
       <guid>04784d0b-9b64-4b06-8f93-f6a2a9b36c5a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Custom-keyword samples/Test_CustomKeyword</testCaseId>
+      <testCaseId>Test Cases/Custom_keyword_testcases/Test_CustomKeyword</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

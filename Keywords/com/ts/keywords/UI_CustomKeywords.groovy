@@ -1,4 +1,4 @@
-package ts_keywords
+package com.ts.keywords
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -29,7 +29,7 @@ import org.openqa.selenium.support.ui.WebDriverWait
 import java.time.Duration
 
 
-public class CustomKeywords {
+public class UI_CustomKeywords {
 
 	/**
 	 * Opens the specified URL in the browser.
@@ -40,7 +40,7 @@ public class CustomKeywords {
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl(url)
 	}
-	
+
 	/**
 	 * Executes JavaScript in the context of the currently selected frame or window.
 	 *
@@ -50,12 +50,12 @@ public class CustomKeywords {
 	static void executeJavaScript(String script, Object... args) {
 		// Get the current driver
 		def driver = DriverFactory.getWebDriver()
-		
+
 		// Cast to JavascriptExecutor and execute the script
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver
 		jsExecutor.executeScript(script, args)
 	}
-	
+
 	/**
 	 * Switches the context to the alert.
 	 *
@@ -101,7 +101,7 @@ public class CustomKeywords {
 		Alert alert = switchToAlert()
 		alert.sendKeys(keysToSend)
 	}
-	
+
 	/**
 	 * Creates an explicit wait instance.
 	 *
@@ -134,14 +134,14 @@ public class CustomKeywords {
 		WebDriverWait wait = createWait(seconds)
 		wait.until(ExpectedConditions.elementToBeClickable(element))
 	}
-	
+
 	@Keyword
 	def static mouseOverDatePicker(String datePickerXPath) {
 		WebElement datePickerElement = WebUI.findWebElement(datePickerXPath)
 		Actions actions = new Actions(DriverFactory.getWebDriver())
 		actions.moveToElement(datePickerElement).perform()
 	}
-	
+
 	/**
 	 * Switches to a frame using its index.
 	 *

@@ -21,16 +21,16 @@ WebUI.scrollToElement(findTestObject('web_components/textBox'), 5)
 
 WebUI.clearText(findTestObject('web_components/textBox'))
 
-CustomKeywords.'ts_keywords.CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
+CustomKeywords.'com.ts.keywords.UI_CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
         1, 1))
 
 WebUI.clearText(findTestObject('web_components/textBox'))
 
-CustomKeywords.'ts_keywords.CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
+CustomKeywords.'com.ts.keywords.UI_CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
         1, 2))
 
 WebUI.clearText(findTestObject('web_components/textBox'))
 
-CustomKeywords.'ts_keywords.CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
+CustomKeywords.'com.ts.keywords.UI_CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
         1, 3))
 
