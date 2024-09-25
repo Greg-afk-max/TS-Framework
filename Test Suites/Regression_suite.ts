@@ -17,5 +17,11 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Data_driven_testcases/Test_DatadrivenExample</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7cd5fe51-4869-4e16-b14d-46e79da7aa50</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
