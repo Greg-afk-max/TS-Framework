@@ -17,20 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.scrollToElement(findTestObject('web_components/textBox'), 5)
-
-WebUI.clearText(findTestObject('web_components/textBox'))
-
-CustomKeywords.'ts_keywords.CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
-        1, 1))
-
-WebUI.clearText(findTestObject('web_components/textBox'))
-
-CustomKeywords.'ts_keywords.CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
-        1, 2))
-
-WebUI.clearText(findTestObject('web_components/textBox'))
-
-CustomKeywords.'ts_keywords.CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
-        1, 3))
+CustomKeywords.'com.ts.project.keywords.LoginPage.loginExample'()
 

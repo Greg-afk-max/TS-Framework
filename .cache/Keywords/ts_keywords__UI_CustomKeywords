@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "741752381627B5FC9EB7B1D953B43D8E",
+  "keywordFileContentHash": "34ACAEA4AE3328EF4F9C806B058470ED",
   "keywordClasses": [
     {
-      "name": "ts_keywords.CustomKeywords",
+      "name": "ts_keywords.UI_CustomKeywords",
       "keywordMethods": [
         {
           "name": "mouseOverDatePicker",
