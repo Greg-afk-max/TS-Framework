@@ -1,28 +1,9 @@
 {
-  "keywordFileContentHash": "2D33D14667ED509F6C4F12DA359CD814",
+  "keywordFileContentHash": "5758F6823966B3FF065F87EEE704920A",
   "keywordClasses": [
     {
       "name": "com.ts.keywords.UI_CustomKeywords",
       "keywordMethods": [
-        {
-          "name": "mouseOverDatePicker",
-          "parameters": [
-            {
-              "name": "datePickerXPath",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
         {
           "name": "clickElement",
           "parameters": [
@@ -39,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "enterText",
@@ -71,8 +51,25 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
+        },
+        {
+          "name": "mouseOverDatePicker",
+          "parameters": [
+            {
+              "name": "datePickerXPath",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         },
         {
           "name": "verifyElementVisible",
@@ -90,11 +87,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
