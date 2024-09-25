@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description>Sample file to store application related dta</description>
-   <name>TS_testData</name>
+   <name>search_functionality_data</name>
    <tag></tag>
    <connectionProperties/>
    <containsHeaders>true</containsHeaders>

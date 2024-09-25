@@ -42,38 +42,38 @@ public class UI_CustomKeywords {
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl(url)
 	}
-	
-	
-	
-	
-		/**
-		 * Click on an element located by its XPath.
-		 *
-		 * @param elementXpath - The XPath of the web element to be clicked.
-		 * @throws StepFailedException if the element is not found or clickable.
-		 * @example
-		 * WebActions.clickElement("//button[@id='login']")
-		 */
-		@Keyword
-		def static clickElement(String elementXpath) {
-			WebUI.click(findTestObject(elementXpath))
-		}
-	
-		/**
-		 * Enter text into an input field located by its XPath.
-		 *
-		 * @param elementXpath - The XPath of the input field.
-		 * @param text - The text to be entered into the input field.
-		 * @throws StepFailedException if the element is not found or text cannot be entered.
-		 * @example
-		 * WebActions.enterText("//input[@id='username']", "myUsername")
-		 */
-		@Keyword
-		def static enterText(String elementXpath, String text) {
-			WebUI.setText(findTestObject(elementXpath), text)
-		}
-	
-	
+
+
+
+
+	/**
+	 * Click on an element located by its XPath.
+	 *
+	 * @param elementXpath - The XPath of the web element to be clicked.
+	 * @throws StepFailedException if the element is not found or clickable.
+	 * @example
+	 * WebActions.clickElement("//button[@id='login']")
+	 */
+	@Keyword
+	def static clickElement(String elementXpath) {
+		WebUI.click(findTestObject(elementXpath))
+	}
+
+	/**
+	 * Enter text into an input field located by its XPath.
+	 *
+	 * @param elementXpath - The XPath of the input field.
+	 * @param text - The text to be entered into the input field.
+	 * @throws StepFailedException if the element is not found or text cannot be entered.
+	 * @example
+	 * WebActions.enterText("//input[@id='username']", "myUsername")
+	 */
+	@Keyword
+	def static enterText(String elementXpath, String text) {
+		WebUI.setText(findTestObject(elementXpath), text)
+	}
+
+
 
 	/**
 	 * Executes JavaScript in the context of the currently selected frame or window.
@@ -214,7 +214,7 @@ public class UI_CustomKeywords {
 		driver.switchTo().window(windowHandle)
 	}
 
-	
+
 
 	@Keyword
 	def static verifyElementVisible(String elementXpath) {

@@ -17,12 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Common_testcases/loginTest'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('common_base_tests/UserLoginTest'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('web_components/textBox'), loop)
+WebUI.scrollToElement(findTestObject('Search_Module_Objects/textBox'), loop)
 
 for (int i = 1; i <= loop; i++) {
-    WebUI.clearText(findTestObject('web_components/textBox'))
+    WebUI.clearText(findTestObject('Search_Module_Objects/textBox'))
 
     CustomKeywords.'com.ts.keywords.UI_CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData(
             'TS_testData').getValue(1, i))
