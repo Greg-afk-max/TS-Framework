@@ -38,16 +38,17 @@ import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
-
+//@SuppressWarnings("unused")
 class LoginPage {
 	/**
 	 * enter valid credentials to login
 	 */
 	@Keyword
 	def loginExample() {
-		UI_CustomKeywords.enterText('Object Repository/web_components/login/textbox_username', "abc")
-		UI_CustomKeywords.enterText('Object Repository/web_components/login/textbox_password', "abc")
-		UI_CustomKeywords.clickElement('Object Repository/web_components/login/button_login')		
+		UI_CustomKeywords.enterText('Object Repository/web_components/login/textbox_username', GlobalVariable.username)
+		UI_CustomKeywords.enterText('Object Repository/web_components/login/textbox_password', GlobalVariable.password)
+				UI_CustomKeywords.enterText('Object Repository/web_components/login/textbox_password', "abc")
+		UI_CustomKeywords.clickElement('Object Repository/web_components/login/button_login')
 		KeywordUtil.markPassed("Login successfully")
 	}
 }

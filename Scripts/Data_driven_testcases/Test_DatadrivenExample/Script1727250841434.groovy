@@ -17,20 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.scrollToElement(findTestObject('web_components/textBox'), 5)
+WebUI.callTestCase(findTestCase('Common_testcases/loginTest'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.clearText(findTestObject('web_components/textBox'))
+WebUI.scrollToElement(findTestObject('web_components/textBox'), loop)
 
-CustomKeywords.'com.ts.keywords.UI_CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
-        1, 1))
+for (int i = 1; i <= loop; i++) {
+    WebUI.clearText(findTestObject('web_components/textBox'))
 
-WebUI.clearText(findTestObject('web_components/textBox'))
-
-CustomKeywords.'com.ts.keywords.UI_CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
-        1, 2))
-
-WebUI.clearText(findTestObject('web_components/textBox'))
-
-CustomKeywords.'com.ts.keywords.UI_CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData('TS_testData').getValue(
-        1, 3))
+    CustomKeywords.'com.ts.keywords.UI_CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData(
+            'TS_testData').getValue(1, i))
+}
 
