@@ -6,10 +6,11 @@
       "keywordMethods": [
         {
           "name": "loginExample",
-          "parameters": []
+          "parameters": [],
+          "javadoc": "/**\r\n\t * enter valid credentials to login\r\n\t */"
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

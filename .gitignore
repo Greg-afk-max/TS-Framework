@@ -4,6 +4,8 @@
 /.classpath
 .project
 .settings/
+.cache/
+
 
 # Reports and logs
 /Reports/

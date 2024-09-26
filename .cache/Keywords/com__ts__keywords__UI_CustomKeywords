@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "5758F6823966B3FF065F87EEE704920A",
+  "keywordFileContentHash": "0D53CC877EEEBFE830F24EA5032A984C",
   "keywordClasses": [
     {
       "name": "com.ts.keywords.UI_CustomKeywords",
@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t\t * Click on an element located by its XPath.\r\n\t\t *\r\n\t\t * @param elementXpath - The XPath of the web element to be clicked.\r\n\t\t * @throws StepFailedException if the element is not found or clickable.\r\n\t\t * @example\r\n\t\t * WebActions.clickElement(\"//button[@id\u003d\u0027login\u0027]\")\r\n\t\t */"
+          ]
         },
         {
           "name": "enterText",
@@ -52,8 +51,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t\t * Enter text into an input field located by its XPath.\r\n\t\t *\r\n\t\t * @param elementXpath - The XPath of the input field.\r\n\t\t * @param text - The text to be entered into the input field.\r\n\t\t * @throws StepFailedException if the element is not found or text cannot be entered.\r\n\t\t * @example\r\n\t\t * WebActions.enterText(\"//input[@id\u003d\u0027username\u0027]\", \"myUsername\")\r\n\t\t */"
+          ]
         },
         {
           "name": "mouseOverDatePicker",
@@ -71,8 +69,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "verifyElementVisible",
@@ -90,11 +87,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
