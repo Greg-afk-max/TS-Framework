@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description>Sample file to store application related dta</description>
-   <name>TS_testData</name>
+   <name>search_functionality_data</name>
    <tag></tag>
    <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>0e66a6db-0cc1-481c-8160-5143dac63cf0</dataFileGUID>
-   <dataSourceUrl>Include/config/testData.xlsx</dataSourceUrl>
+   <dataSourceUrl>Include/config/search_functionality_data.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>

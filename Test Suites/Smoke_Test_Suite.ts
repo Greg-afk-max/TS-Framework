@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Regression_suite</name>
+   <name>Smoke_Test_Suite</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,12 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>0e57be9d-7f37-45c1-92ff-1797aafb8cb1</testSuiteGuid>
+   <testSuiteGuid>bdca465a-8d46-4264-b1c5-be3c3934abdf</testSuiteGuid>
    <testCaseLink>
-      <guid>00e5f068-e03d-4a07-b63b-d32376989bdf</guid>
+      <guid>04784d0b-9b64-4b06-8f93-f6a2a9b36c5a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Data_driven_testcases/Test_DatadrivenExample</testCaseId>
+      <testCaseId>Test Cases/custom_keyword_tests/CustomKeyword_ExecutionTest</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

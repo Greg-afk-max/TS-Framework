@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "6BB33BB674857389BE891E03EAC25F2D",
+  "keywordFileContentHash": "2F96B58CADF2224BA213EA649292513C",
   "keywordClasses": [
     {
       "name": "com.ts.project.keywords.LoginPage",
@@ -7,7 +7,7 @@
         {
           "name": "loginExample",
           "parameters": [],
-          "javadoc": "/**\n\t * enter valid credentials to login\n\t */"
+          "javadoc": "/**\r\n\t * enter valid credentials to login\r\n\t */"
         }
       ]
     }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>shopping-cart-tests</name>
+   <name>ts-katalon-framework</name>
    <tag></tag>
    <UUID>052f4412-8190-4f05-b35a-5dd184aacaff</UUID>
    <freeLicense>false</freeLicense>
@@ -9,7 +9,7 @@
    <modifiedEdition>ENTERPRISE</modifiedEdition>
    <modifiedVersion>9.6.0</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\Astami\Desktop\TS_hybrid_framework\ts.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\Astami\git\TS-Framework\ts.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

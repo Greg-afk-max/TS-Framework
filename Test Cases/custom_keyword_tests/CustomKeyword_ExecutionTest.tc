@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Test_DatadrivenExample</name>
+   <name>CustomKeyword_ExecutionTest</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>24792386-c1bd-43da-bbf4-0d64214a07dd</testCaseGuid>
+   <testCaseGuid>00fd7c05-77c6-4965-95b1-a1121dfdfdc1</testCaseGuid>
 </TestCaseEntity>

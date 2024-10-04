@@ -3,87 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>TS demo Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+            color: #444;
         }
         .container {
             max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            margin: 50px auto;
+            padding: 30px;
             background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
-        h1 {
+        h1, h2 {
+            color: #388e3c;
+            text-align: center;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #666;
+        }
+        label {
+            display: inline-block;
+            margin-top: 10px;
             color: #333;
         }
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+        input[type="submit"] {
+            background-color: #388e3c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #2e7d32;
+        }
+        button {
+            background-color: #388e3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2e7d32;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+        select {
+            width: 100%;
+            font-size: 1rem;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+/* Container styling for form elements */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Styling the label */
+        label {
+            font-weight: bold;
+            color: #1b4d3e;
+        }
+
+        /* Styling for date picker */
+        input[type="date"] {
+            appearance: none; /* Removes default browser styling */
+            background-color: white;
+            border: 2px solid #4caf50;
+            color: #2d572c;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 250px;
+            outline: none;
+        }
+
+        /* Styling for date picker on hover */
+        input[type="date"]:hover {
+            border-color: #45a049;
+        }
+
+        /* Styling for date picker on focus */
+        input[type="date"]:focus {
+            border-color: #1b4d3e;
+            box-shadow: 0 0 5px rgba(27, 77, 62, 0.5);
+        }
+
+        /* Styling placeholder text for date input */
+        input[type="date"]::-webkit-datetime-edit-text,
+        input[type="date"]::-webkit-datetime-edit-month-field,
+        input[type="date"]::-webkit-datetime-edit-day-field,
+        input[type="date"]::-webkit-datetime-edit-year-field {
+            color: #4caf50; /* Color of the text */
+        }
+
+        
+
+   /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4caf50; /* Green header */
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Welcome to My Simple Website</h1>
-    <p>This is a basic HTML website template.</p>
+    <h1>TS demo website</h1>
+
+
+
+   
+    <h2>Date Field</h2>
+  
+    <form action="/action_page.php">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <input type="submit" value="Submit">
+    </form>
+    
+    <h2>Radio Buttons</h2>
+   
+    <form action="/action_page.php">
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+
+    <h2>HTML Forms</h2>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+
+    <h2>The button Element</h2>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <h2>The select Element</h2>
+    <p>Choose a car:</p>
+    <form action="/action_page.php">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+       <!-- Web Table -->
+    <h2>Sample Web Table</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>25</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>30</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Mike Ross</td>
+                <td>35</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Ravi Patel</td>
+                <td>40</td>
+                <td>India</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+<!-- Checkbox -->
+    <label for="subscribe">Subscribe to Newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+ 
+    <!-- File Upload -->
+    <label for="fileUpload">Upload a file:</label>
+    <input type="file" id="fileUpload" name="fileUpload"><br><br>
+
+    <!-- Image -->
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image"><br><br>
+
+    <!-- Hidden Input -->
+    <input type="hidden" id="hiddenField" name="hiddenField" value="hiddenValue">
+
+
 </div>
-<h2>Date Field</h2>
+ 
 
-<p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+<div class="footer">
+    <p>&copy; 2024 Demo TS Website. All rights reserved.</p>
+</div>
 
-<form action="/action_page.php">
-  <label for="birthday">Birthday:</label>
-  <input type="date" id="birthday" name="birthday">
-  <input type="submit" value="Submit">
-</form>
 
-<p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11.</p>
-
-<h2>Radio Buttons</h2>
-
-<p>The <strong>input type="radio"</strong> defines a radio button:</p>
-
-<p>Choose your favorite Web language:</p>
-<form action="/action_page.php">
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">HTML</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">CSS</label><br>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript">JavaScript</label><br><br>
-  <input type="submit" value="Submit">
-</form> 
-<h2>HTML Forms</h2>
-
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-<h2>The button Element</h2>
-
-<button type="button" onclick="alert('Hello World!')">Click Me!</button>
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
-<h2>The select Element</h2>
-
-<p>The select element defines a drop-down list:</p>
-
-<form action="/action_page.php">
-  <label for="cars">Choose a car:</label>
-  <select id="cars" name="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select>
-  <input type="submit">
-</form>
 </body>
 </html>
