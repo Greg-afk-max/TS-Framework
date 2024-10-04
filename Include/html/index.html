@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Green Modern Website</title>
+    <title>TS demo Website</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -86,25 +86,94 @@
             font-size: 0.9rem;
             color: #555;
         }
+
+/* Container styling for form elements */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Styling the label */
+        label {
+            font-weight: bold;
+            color: #1b4d3e;
+        }
+
+        /* Styling for date picker */
+        input[type="date"] {
+            appearance: none; /* Removes default browser styling */
+            background-color: white;
+            border: 2px solid #4caf50;
+            color: #2d572c;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 250px;
+            outline: none;
+        }
+
+        /* Styling for date picker on hover */
+        input[type="date"]:hover {
+            border-color: #45a049;
+        }
+
+        /* Styling for date picker on focus */
+        input[type="date"]:focus {
+            border-color: #1b4d3e;
+            box-shadow: 0 0 5px rgba(27, 77, 62, 0.5);
+        }
+
+        /* Styling placeholder text for date input */
+        input[type="date"]::-webkit-datetime-edit-text,
+        input[type="date"]::-webkit-datetime-edit-month-field,
+        input[type="date"]::-webkit-datetime-edit-day-field,
+        input[type="date"]::-webkit-datetime-edit-year-field {
+            color: #4caf50; /* Color of the text */
+        }
+
+        
+
+   /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4caf50; /* Green header */
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
     </style>
 </head>
 <body>
 
 <div class="container">
     <h1>TS demo website</h1>
-    <p>This is an updated, modern HTML template with a green theme.</p>
 
+
+
+   
     <h2>Date Field</h2>
-    <p>The <strong>input type="date</strong> is used for input fields that should contain a date.</p>
+  
     <form action="/action_page.php">
         <label for="birthday">Birthday:</label>
         <input type="date" id="birthday" name="birthday">
         <input type="submit" value="Submit">
     </form>
-    <p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11.</p>
-
+    
     <h2>Radio Buttons</h2>
-    <p>Choose your favorite Web language:</p>
+   
     <form action="/action_page.php">
         <input type="radio" id="html" name="fav_language" value="HTML">
         <label for="html">HTML</label><br>
@@ -139,11 +208,64 @@
         </select>
         <input type="submit" value="Submit">
     </form>
+
+       <!-- Web Table -->
+    <h2>Sample Web Table</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>25</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>30</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Mike Ross</td>
+                <td>35</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Ravi Patel</td>
+                <td>40</td>
+                <td>India</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+<!-- Checkbox -->
+    <label for="subscribe">Subscribe to Newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+ 
+    <!-- File Upload -->
+    <label for="fileUpload">Upload a file:</label>
+    <input type="file" id="fileUpload" name="fileUpload"><br><br>
+
+    <!-- Image -->
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image"><br><br>
+
+    <!-- Hidden Input -->
+    <input type="hidden" id="hiddenField" name="hiddenField" value="hiddenValue">
+
+
 </div>
+ 
 
 <div class="footer">
-    <p>&copy; 2024 My Green Modern Website. All rights reserved.</p>
+    <p>&copy; 2024 Demo TS Website. All rights reserved.</p>
 </div>
+
 
 </body>
 </html>

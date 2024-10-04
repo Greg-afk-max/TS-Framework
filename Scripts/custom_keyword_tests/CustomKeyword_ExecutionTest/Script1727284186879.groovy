@@ -12,7 +12,10 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-import ts_keywords.CustomKeywords as CustomKeywords
+WebUI.callTestCase(findTestCase('common_base_tests/UserLoginTest'), [:], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.verifyElementVisible('Object Repository/web_components/page_header')
+CustomKeywords.'com.ts.keywords.UI_CustomKeywords.verifyElementVisible'('Object Repository/Search_Module_Objects/page_header')
+

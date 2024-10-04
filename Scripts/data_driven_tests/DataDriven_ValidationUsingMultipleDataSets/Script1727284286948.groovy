@@ -24,7 +24,7 @@ WebUI.scrollToElement(findTestObject('Search_Module_Objects/textBox'), loop)
 for (int i = 1; i <= loop; i++) {
     WebUI.clearText(findTestObject('Search_Module_Objects/textBox'))
 
-    CustomKeywords.'com.ts.keywords.UI_CustomKeywords.enterText'('Object Repository/web_components/textBox', findTestData(
-            'TS_testData').getValue(1, i))
+    CustomKeywords.'com.ts.keywords.UI_CustomKeywords.enterText'('Search_Module_Objects/textBox', findTestData(
+            'search_functionality_data').getValue(1, i))
 }
 
