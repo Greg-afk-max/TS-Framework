@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "8D2BD1C3AC0CBCC46DD3076714CEBFC5",
+  "keywordFileContentHash": "69AEA396A3DE8F2A8C7B85B568C9DC35",
   "keywordClasses": [
     {
       "name": "com.ts.keywords.UI_CustomKeywords",
@@ -20,7 +20,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Click on an element located by its XPath.\r\n\t *\r\n\t * @param elementXpath - The XPath of the web element to be clicked.\r\n\t * @throws StepFailedException if the element is not found or clickable.\r\n\t * @example\r\n\t * WebActions.clickElement(\"//button[@id\u003d\u0027login\u0027]\")\r\n\t */"
         },
         {
           "name": "enterText",
@@ -51,7 +52,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Enter text into an input field located by its XPath.\r\n\t *\r\n\t * @param elementXpath - The XPath of the input field.\r\n\t * @param text - The text to be entered into the input field.\r\n\t * @throws StepFailedException if the element is not found or text cannot be entered.\r\n\t * @example\r\n\t * WebActions.enterText(\"//input[@id\u003d\u0027username\u0027]\", \"myUsername\")\r\n\t */"
         },
         {
           "name": "verifyElementVisible",
@@ -69,7 +71,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Custom keyword to verify the visibility of an element on the webpage.\r\n\t *\r\n\t * This method accepts the Xpath of the element as a string and checks whether\r\n\t * the corresponding element is visible on the web page. If the element is not\r\n\t * visible, Katalon will throw an assertion error.\r\n\t *\r\n\t * @param elementXpath The Xpath of the element to be verified (as a String).\r\n\t *                     It should match the element in the object repository.\r\n\t *                     Example: \u0027Object Repository/Page_Login/btn_login\u0027\r\n\t *\r\n\t * Usage Example:\r\n\t * verifyElementVisible(\u0027Object Repository/Page_Login/btn_login\u0027)\r\n\t *\r\n\t * Note: Ensure that the Xpath provided corresponds to a valid TestObject in\r\n\t *       the Object Repository.\r\n\t */"
         },
         {
           "name": "mouseOverDatePicker",
@@ -87,10 +90,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
